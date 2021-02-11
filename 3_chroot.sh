@@ -22,7 +22,7 @@ apt-get install -y --no-install-recommends \
 
 apt-get install -y --no-install-recommends \
     network-manager net-tools wireless-tools \
-    curl openssh-server openssh-client nano xorg
+    wget nano xorg
 apt-get clean
 
 passwd -d root
