@@ -16,7 +16,7 @@ apt-cache search linux-image
 
 apt-get update && \
 apt-get install -y --no-install-recommends \
-    linux-image-4.9.0-8-amd64 \
+    linux-image-4.9.0-13-amd64 \
     live-boot \
     systemd-sysv
 
@@ -28,6 +28,6 @@ apt-get install -y --no-install-recommends \
     nano && \
 apt-get clean
 
-passwd root
+passwd -d root
 
 exit

@@ -12,7 +12,8 @@ source ./config.txt
 sudo rm -f $HOME/$LIVE_BOOT/chroot/03_*.sh 
 sudo rm -f $HOME/$LIVE_BOOT/chroot/denos_config.txt 
 
-mkdir -p $HOME/$LIVE_BOOT/{scratch,image/live}
+mkdir -p $HOME/$LIVE_BOOT/scratch
+mkdir -p $HOME/$LIVE_BOOT/image/live
 
 sudo mksquashfs \
     $HOME/$LIVE_BOOT/chroot \
@@ -30,8 +31,8 @@ search --set=root --file /DEBIAN_CUSTOM
 
 insmod all_video
 
-set default="0"
-set timeout=30
+set default=0
+set timeout=0
 
 menuentry "$DISTRO_NAME Live" {
     linux /vmlinuz boot=live quiet nomodeset
@@ -46,5 +47,5 @@ ls -lRh $HOME/$LIVE_BOOT/scratch
 ls -lRh $HOME/$LIVE_BOOT/image
 
 echo " "
-echo "Execute ./05_denos_BiosUEFI_ISO.sh"
+echo "Execute ./05_BiosUEFI_ISO.sh"
 echo " "

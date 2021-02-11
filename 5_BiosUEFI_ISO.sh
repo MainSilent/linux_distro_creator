@@ -54,7 +54,7 @@ xorriso \
         -e EFI/efiboot.img \
         -no-emul-boot \
     -append_partition 2 0xef ${HOME}/$LIVE_BOOT/scratch/efiboot.img \
-    -output "${HOME}/$LIVE_BOOT/$DISTRO_NAME-$VERSION.iso" \
+    -output "${HOME}/$LIVE_BOOT/$DISTRO_NAME.iso" \
     -graft-points \
         "${HOME}/$LIVE_BOOT/image" \
         /boot/grub/bios.img=$HOME/$LIVE_BOOT/scratch/bios.img \

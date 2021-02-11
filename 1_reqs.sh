@@ -15,8 +15,8 @@ apt install -y xorriso
 apt install -y grub-pc-bin
 apt install -y grub-efi-amd64-bin
 apt install -y mtools
+apt install -y genisoimage
 
 echo " "
-echo "Edit  ./denos_config.txt to customize your Distro Settings"
-echo "Execute ./02_denos_debootstrap.sh"
+echo "Execute ./02_debootstrap.sh"
 echo " "
