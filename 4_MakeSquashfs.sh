@@ -47,5 +47,5 @@ ls -lRh $HOME/$LIVE_BOOT/scratch
 ls -lRh $HOME/$LIVE_BOOT/image
 
 echo " "
-echo "Execute ./05_BiosUEFI_ISO.sh"
+echo "Execute ./5_BiosUEFI_ISO.sh"
 echo " "

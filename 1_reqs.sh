@@ -18,5 +18,5 @@ apt install -y mtools
 apt install -y genisoimage
 
 echo " "
-echo "Execute ./02_debootstrap.sh"
+echo "Execute ./2_debootstrap.sh"
 echo " "
