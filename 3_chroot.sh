@@ -21,11 +21,8 @@ apt-get install -y --no-install-recommends \
     systemd-sysv
 
 apt-get install -y --no-install-recommends \
-    network-manager net-tools wireless-tools wpagui \
-    curl openssh-server openssh-client \
-    blackbox xserver-xorg-core xserver-xorg xinit xterm \
-    screenfetch screen lxterminal vim \
-    nano && \
+    network-manager net-tools wireless-tools \
+    curl openssh-server openssh-client nano xorg
 apt-get clean
 
 passwd -d root
