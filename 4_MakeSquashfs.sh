@@ -9,8 +9,8 @@
 # export LIVE_BOOT=LIVE_BOOT64
 source ./config.txt
 
-sudo rm -f $HOME/$LIVE_BOOT/chroot/03_*.sh 
-sudo rm -f $HOME/$LIVE_BOOT/chroot/denos_config.txt 
+sudo rm -f $HOME/$LIVE_BOOT/chroot/3_chroot.sh
+sudo rm -f $HOME/$LIVE_BOOT/chroot/config.txt 
 
 mkdir -p $HOME/$LIVE_BOOT/scratch
 mkdir -p $HOME/$LIVE_BOOT/image/live
